@@ -1,0 +1,21 @@
+body{
+	magrin: 0;
+	padding: 0;
+	font-style: normal;
+}
+h1{
+	font-size: 36pt;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+h2{
+	font-size: 30pt;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+h3{
+	font-size: 30pt;
+	text-transform: uppercase;
+	color: #000000;
+}
