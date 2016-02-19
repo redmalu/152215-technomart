@@ -7,8 +7,8 @@ body{
 	padding: 0px;
 	font-style: normal;
 	font-family: 'Cuprum';
-	background: url("C:/Users/Inozema/Documents/GitHub/152215-technomart/technomart-index.jpg") no-repeat 50% 0px;
-  background-size: 1200px;
+	/*background: url("C:/Users/Inozema/Documents/GitHub/152215-technomart/technomart-catalog.jpg") no-repeat 50% 0px;
+  */
 }
 h1{
 	font-size: 36px;
@@ -17,7 +17,8 @@ h1{
 }
 h2{
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 36px;
+	margin:0;
 	text-transform: uppercase;
 	color: #32425c;
 }
@@ -33,37 +34,74 @@ a{
 }
 
 .clearfix::after{
-	content: "";
+	content: '';
 	display: table;
 	clear: both;
 }
 .main-header{
-	background-color: rgba(255,213,154,0.1);
-	content:'.main-header';
-	min-height: 320px;
 	margin-bottom: 60px;
 }
 .container{
-	
 	width: 940px;
 	margin: 0 auto;
 	padding: 0px 10px;
 }
 .header-top-menu{
-	background-color: rgba(255,213,19,0.5);
-	min-height: 42px;
+	background-color: #293449;
+	color:#ffffff;
 }
+.top-menu-logo{
+	position:relative;
+	height: 42px;
+	background-color: #ee3643;
+	float: left;
+	width: 220px;
+	margin-right: 10px;
+}
+.top-menu-logo:before{
+	display: block;
+	width: 120px;
+	content:'техномарт';
+	margin: 10px auto;
+	font-size: 24px;
+	line-height: 30px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.top-menu-logo::after{
+	content:"";
+	position: absolute;
+	width: inherit;
+	bottom:-5px;
+	background-color: #b52933;
+	height: 5px;
+}
+.top-menu-order{
+	float: left;
+	height: 42px;
+	width: 710px;
+}
+.top-menu-order ul{
+}
+.top-menu-order li{
+	display: inline-block;
+}
+.header-top-menu .btn{
+	width: 150px;
+	background-color: black;
+}
+
 .header-info{
 	border-top: 1px solid transparent;
-	min-height: 278px;
-	background-color: brown;
-	opacity: 0.5;
+	background-color: #f2f6f8;
+	padding-bottom: 60px;
 }
+
 .header-about{
 	background-color: rgba(125,223,19,0.5);
 	min-height: 85px;
-	margin-top: 30px;
-	margin-bottom: 45px;
+	padding-top: 47px;
+	padding-bottom: 45px;
 }
 .column-3{
 	width: 300px;
@@ -75,9 +113,29 @@ a{
 }
 
 .main-navigation{
-	background-color: rgba(0,21,190,0.5);
-	min-height: 60px;
+	background-color: #32425c;
+	color:#ffffff;
+	border-bottom: 5px solid #293449;
 }
+.main-navigation ul{
+	margin: 0;
+	padding: 20px 50px;
+	list-style: none;
+	font-size: 0px;
+}
+.main-navigation li{
+	display: inline-block;
+	margin-right: 60px;
+}
+.main-navigation li:last-child{
+	margin-right: 0px;
+}
+.main-navigation a{
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 1.2;
+}
+
 .main-features{
 	background-color: rgba(0,21,190,0.5);
 	margin-bottom: 55px;
@@ -86,13 +144,12 @@ a{
 	margin-bottom: 20px;
 }
 .section-brands{
-	background-color: yellow;
-	opacity: 0.1;
 	min-height: 380px;
 	margin-bottom: 85px;
 }
 .main-service{
 	min-height: 520px;
+	background-color: #f2f6f8;
 	padding: 0 25px;
 	margin-bottom: 80px;
 }
@@ -102,7 +159,6 @@ a{
 	width: 300px;
 	height: 123px;
 	background-color: yellow;
-	opacity: 0.5;
 }
 .features-item:nth-child(1),
 .features-item:nth-child(2){
@@ -112,6 +168,7 @@ a{
 	margin-bottom: 0px;
 }
 .slider{
+	background-color: red;
 	float: left;
 	width: 620px;
 	height: 266px;
@@ -119,9 +176,12 @@ a{
 }
 .section-title{
 	margin-bottom: 20px;
-	padding:0px 30px;
+	width: inherit;
+	padding:25px 30px;
+	background-color: #f7f3ec;
 }
-.section-title>h2{
+
+.section-title > h2{
 	float:left;
 	width: 600px;
 }
@@ -138,6 +198,8 @@ a{
 	width: 220px;
 	min-height: 320px;
 	margin-right: 20px;
+	background-color: blueviolet;
+	opacity: 0.5;
 }
 .popular-item:last-child{
 	margin-right:0px;
@@ -149,6 +211,8 @@ a{
 	width: 220px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	background-color: cadetblue;
+	opacity: 0.5;
 }
 
 .btn{
@@ -173,20 +237,114 @@ a{
 .service-menu{
 	float:left;
 	width:300px;
+	background-color: green;
+	opacity: 0.5;
 }
 .service-slider{
 	float:right;
 	width:620px;
+	background-color: yellowgreen;
+	opacity: 0.5;
+}
+.main-about{
+	background-color: black;
+	height: 400px;
 }
 .column-left{
 	background-color: yellow;
 	opacity: 0.5;
 	float:left;
 	width:540px;
+	background-color: orangered;
 }
 .column-right{
 	background-color: orange;
 	opacity: 0.5;
 	float:right;
 	width:300px;
+}
+
+/*catalog*/
+.breadcrums ul{
+	margin:0;
+	padding:0;
+}
+.breadcrums li{
+	position: relative;
+	display: inline-block;
+	margin-top: 0;
+	padding-left: 39px;
+}
+.catalog-title{
+	padding: 30px 27px;
+	background-color: #f2f6f8;
+}
+
+.catalog-main-left{
+	float: left;
+	width: 220px;
+	padding-right: 20px;
+}
+.catalog-main-right{
+	float:right;
+	width: 700px;
+}
+
+fieldset{
+	border:none;
+}
+fieldset input{
+	width: 100%;
+	box-sizing: border-box;
+}
+.main-footer{
+	height: 300px;
+	background-color: orange;
+	opacity: 0.5;
+	margin-top: 70px;
+}
+.footer-menu{
+	height:193px; 
+	background-color: pink;
+	opacity: 0.5;
+}
+.footer-top-menu{
+	height:64px;
+	background-color: darkmagenta;
+	opacity: 0.5;
+}
+.footer-logo{
+	width: 220px;
+	height: 64px;
+	background-color: red;
+	opacity: 0.5;
+}
+.footer-column-3{
+	width: 300px;
+	float: left;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.footer-column-3:last-child{
+	margin-right: 0;
+}
+.footer-bottom-menu{
+	height: 125px;
+	background-color: aqua;
+	opacity: 0.5;
+}
+.footer-copyright{
+	height: 107px;
+	background-color: darkorange;
+	opacity: 0.5;
+}
+.block-mail{
+	float:left;
+	width: 160px;
+	background-color: white;
+}
+.block-copyright{
+	float:right;
+	width: 110px;
+	background-color: white;
 }
