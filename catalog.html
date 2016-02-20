@@ -62,38 +62,58 @@
 						<li>Перфораторы</li>
 					</ul>
 				</div>
-				<div class="catalog-title">
-					<h2>Перфораторы</h2>
-				</div>
+				<h1>Перфораторы</h1>
 				<div class="catalog-content clearfix">
 					<section class="catalog-main-left">
+					<div class="form-title">
+						<span>Фильтр:</span>
+					</div>
 					<form action="#" type="post">
-						<div>
-							<span>Фильтр:</span>
-						</div>  
 						<fieldset>
 							<legend>Цена:</legend>
-							<div class="filter-price">
+							<div class="row">
 							</div>
+							<div></div>
 						</fieldset>
 						<fieldset>
 							<legend>Производители:</legend>
-							<input type="checkbox" id="cbx-bosch" /><label for="cbx-bosch">BOSCH</label>
-							<input type="checkbox" id="cbx-interskol" /><label for="cbx-interskol">Интрескол</label>
-							<input type="checkbox" id="cbx-makita" /><label for="cbx-makita">makita</label>
-							<input type="checkbox" id="cbx-dewalt" /><label for="cbx-dewalt">dewalt</label>
-							<input type="checkbox" id="cbx-hitachi" /><label for="cbx-hitachi">hitachi</label>
+							<div class="row">
+								<input type="checkbox" id="cbx-bosch" />
+								<label for="cbx-bosch">BOSCH</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="cbx-interskol" />
+								<label for="cbx-interskol">Интрескол</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="cbx-makita" />
+								<label for="cbx-makita">makita</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="cbx-dewalt" />
+								<label for="cbx-dewalt">dewalt</label>
+							</div>
+							<div class="row">
+								<input type="checkbox" id="cbx-hitachi" />
+								<label for="cbx-hitachi">hitachi</label>
+							</div>
 						</fieldset>
 						<fieldset>
 							<legend>Питание:</legend>
-							<input type="radio" name="rb-energy" id="radio-akk" /><label for="radio-akk">Аккумуляторные</label>
-							<input type="radio" name="rb-energy" id="radio-set" /><label for="radio-set">Сетевые</label>
+							<div class="row">
+								<input type="radio" name="rb-energy" id="radio-akk" />
+								<label for="radio-akk">Аккумуляторные</label>
+							</div>
+							<div class="row">								
+								<input type="radio" name="rb-energy" id="radio-set" />
+								<label for="radio-set">Сетевые</label>
+							</div>
 						</fieldset>
 						<button type="submit" >Показать</button>
 					</form>        
 				</section>
 					<section class="catalog-main-right">
-        <div>
+        <div class="form-title">
           <span>Сортировка:</span>
 					<a href="#">По цене</a>
 					<a href="#">По типу</a>
@@ -199,27 +219,31 @@
     <footer class="main-footer">
 			<div class="footer-menu">
 				<div class="container">
-					<div class="footer-top-menu">
+					<div class="footer-top-level clearfix">
 						<div class="footer-logo"></div>
-						<ul>
-							<li><a href="#">Компания</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
+						<div class="footer-top-menu">
+							<ul>
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="footer-bottom-menu">
-						<div class="address">
+					<div class="footer-middle-level clearfix">
+						<div class="footer-address">
 							<p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 							<p>+7(812) 555-05-55</p>
 						</div>
-						<ul>
-							<li><a href="#">Материалы</a></li>
-							<li><a href="#">Техника</a></li>
-							<li><a href="#">Инструмент</a></li>
-							<li><a href="#">Спецпредложения</a></li>
-						</ul>
+						<div class="footer-middle-menu">
+							<ul>
+								<li><a href="#">Материалы</a></li>
+								<li><a href="#">Техника</a></li>
+								<li><a href="#">Инструмент</a></li>
+								<li><a href="#">Спецпредложения</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

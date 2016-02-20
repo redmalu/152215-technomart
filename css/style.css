@@ -1,5 +1,4 @@
 html, body{
-	min-height: 3151px;
 	min-width: 1200px;
 }
 body{
@@ -7,8 +6,8 @@ body{
 	padding: 0px;
 	font-style: normal;
 	font-family: 'Cuprum';
-	background: url("technomart-index.jpg") no-repeat 50% 0px;
-  
+	/*background: url("technomart-index.jpg") no-repeat 50% 0px;
+  */
 }
 h1{
 	font-size: 36px;
@@ -274,6 +273,7 @@ a{
 	margin-bottom: 20px;
 	width: inherit;
 	padding:25px 30px;
+	background-color: #f7f3ec;
 }
 
 .section-title > h2{
@@ -307,20 +307,19 @@ a{
 .catalog-brand{
 	display: inline-block;
 	vertical-align: top;
-	text-align: center;
-	height: 145px;
-	width: 220px;
+	height: 143px;
+	width: 218px;
 	margin-right: 20px;
 	margin-bottom: 20px;
-	background-color: cadetblue;
-	opacity: 0.5;
+	border: 1px solid #e5e5e5;
 }
 .catalog-brand a{
-	
-}
-.catalog-brand img{
-	text-align: center;
-	vertical-align: middle;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:inherit;
+	height: inherit;
 }
 
 .btn{
@@ -340,7 +339,18 @@ a{
 	margin-bottom: 0px;
 }
 .service-title{
-	
+	border: 1px solid inherit;
+	margin-bottom: 70px;
+}
+.service-title h2{
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+.service-title p{
+	font-size: 13px;
+	line-height: 24px;
+	margin:0;
+	margin-bottom: 13px;
 }
 .service-menu{
 	float:left;
@@ -395,11 +405,23 @@ a{
 	margin-top: 0;
 	padding-left: 39px;
 }
-.catalog-title{
+.catalog-main h1{
+	margin:0;
 	padding: 30px 27px;
 	background-color: #f2f6f8;
+	color:#32425c;
 }
-
+.form-title{
+	margin:20px 0;
+	padding:10px 20px;
+	background-color: #f7f3ec;
+}
+.form-title span{
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
 .catalog-main-left{
 	float: left;
 	width: 220px;
@@ -409,12 +431,29 @@ a{
 	float:right;
 	width: 700px;
 }
+.catalog-item{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0px;
+	margin:0;
+	width: 218px;
+	border:1px solid #e5e5e5;
+	margin-right: 16px;
+	margin-bottom: 20px;
+}
+.catalog-item:nth-child(3n){
+	margin-right: 0px;
+}
+.catalog h2{
+	font-size: 18px;
+	line-height: 24px;
+	color:#000000;
+}
 
 fieldset{
 	border:none;
 }
 fieldset input{
-	width: 100%;
 	box-sizing: border-box;
 }
 .main-footer{
@@ -439,17 +478,24 @@ fieldset input{
 .footer-top-menu{
 	float:right;
 	width: 710px;
+	padding-top: 40px;
 }
 .footer-top-menu ul{
+	margin:0;
+	padding:0;
 	list-style: none;
-	color:#ffffff;
+	font-size: 0;
 }
 .footer-top-menu li{
 	display:inline-block;
+	padding-left: 60px;
+	margin-right: 0;
 }
 .footer-top-menu a{
-	display:inline-block;
 	color:#ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: none;
 }
 
 .footer-column-3{
@@ -462,39 +508,51 @@ fieldset input{
 	margin-right: 0;
 }
 .footer-middle-level{
-	height: 125px;
+	padding-top:30px;
 }
 .footer-address{
-	width: 380px;
+	width: 300px;
 	float:left;
 }
+.footer-address p{
+	margin:0;
+}
 .footer-middle-menu{
-	width: 540px;
+	width: 600px;
 	float:right;
 }
 .footer-middle-menu ul{
+	margin: 0;
+	padding: 0;
 	list-style: none;
+	font-size: 0px;
 }
 .footer-middle-menu li{
 	display: inline-block;
 	color: #ffd180;
+	padding-left: 60px;
 }
 .footer-middle-menu a{
-	display: inline-block;
 	color: #ffd180;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: none;
 }
 .footer-copyright{
-	height: 107px;
 	background-color: #293449;
 	color:#ffffff;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
+.footer-copyright p{
+	margin:0;
+}
+
 .block-mail{
 	float:left;
 	width: 160px;
-	background-color: white;
 }
 .block-copyright{
 	float:right;
 	width: 110px;
-	background-color: white;
 }
