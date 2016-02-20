@@ -29,7 +29,6 @@ h3{
 }
 a{
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .clearfix::after{
@@ -57,10 +56,9 @@ a{
 	width: 220px;
 	margin-right: 10px; 
 }
-.top-menu-logo:before{
+.top-menu-logo span{
 	display: block;
 	width: 120px;
-	content:'техномарт';
 	margin: 10px auto;
 	font-size: 24px;
 	line-height: 30px;
@@ -93,6 +91,7 @@ a{
 }
 .top-menu-order ul{
 	font-size: 0;
+	text-align: right;
 	margin: 0;
 	padding: 0;
 }
@@ -431,15 +430,19 @@ a{
 	float:right;
 	width: 700px;
 }
-.catalog-item{
-	display: inline-block;
-	vertical-align: top;
+.catalog{
 	font-size: 0px;
-	margin:0;
+}
+.catalog-item{
+	position: relative;
+	display: inline-block;
 	width: 218px;
-	border:1px solid #e5e5e5;
-	margin-right: 16px;
+	margin-right: 20px;
 	margin-bottom: 20px;
+	border:1px solid #e5e5e5;
+	text-align: center;
+	vertical-align: top;
+	background-color: white;
 }
 .catalog-item:nth-child(3n){
 	margin-right: 0px;
@@ -449,12 +452,138 @@ a{
 	line-height: 24px;
 	color:#000000;
 }
+.item-image{
+	width:170px;
+	height: 136px;
+}
+.item-price{
+	position:relative;
+	width: 94px;
+	padding: 7px 23px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	font-size: 17px;
+	line-height: 24px;
+	background-color: #ee3643;
+	color:#ffffff;
+	text-transform: uppercase;
+}
+.new-item:after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 60px;
+	height: 60px;
+	background: url('../img/new-flag.png') no-repeat 0 0;
+}
+.item-price:not(.old-price)::after{
+	content:"";
+	position:absolute;
+	top:0;
+	right:-19px;
+	width:0;
+	height:0;
+	border:19px solid white;
+	border-left-color:#ee3643;
+}
+.old-price{
+	background-color: inherit;
+	min-height: 28px;
+	text-decoration: line-through;
+	color: #999999;
+	margin-bottom:0;
+}
 
 fieldset{
 	border:none;
+	border-bottom: 1px solid #e5e5e5;
+	margin-top: 26px;
 }
-fieldset input{
-	box-sizing: border-box;
+legend{
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+input[type='checkbox'],
+input[type='radio']{
+	display:none;
+}
+
+input[type='checkbox'] + label,
+input[type='radio'] + label{
+	display: block;
+	position: relative;
+	margin: 15px 0;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+input[type='checkbox'] + label::before,
+input[type='radio'] + label::before{
+	content: '';
+	border: 3px solid #c1c1c1;
+	border-radius: 4px;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+
+input[type='radio'] + label::before{
+	border-radius: 50%;
+}
+input[type='radio']:checked + label::after{
+	position:absolute;
+	content: '';
+	top:6px;
+	left:6px;
+	width:	1px;
+	height: 1px;
+	background-color: #c1c1c1;
+	border:5px solid #c1c1c1;
+	border-radius: 50%;
+}
+.paging{
+	margin-bottom: 60px;
+}
+.paging ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-size: 0;
+}
+.paging li{
+	display: inline-block;
+	margin-right: 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+.paging a,
+.paging span{
+    display: inline-block;
+    min-width: 20px;
+    min-height: 18px;
+    padding: 10px 10px;
+		font-size: 13px;
+    line-height: 18px;
+		color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.paging a:hover{
+	
+}
+.paging .active{
+	background-color: #ee3643;
+	color:#ffffff;
 }
 .main-footer{
 	height: 300px;
@@ -480,18 +609,19 @@ fieldset input{
 	width: 710px;
 	padding-top: 40px;
 }
-.footer-top-menu ul{
+.menu{
 	margin:0;
 	padding:0;
 	list-style: none;
+	text-align: right;
 	font-size: 0;
 }
-.footer-top-menu li{
+.menu li{
 	display:inline-block;
 	padding-left: 60px;
 	margin-right: 0;
 }
-.footer-top-menu a{
+.menu a{
 	color:#ffffff;
 	font-size: 18px;
 	line-height: 24px;
@@ -521,18 +651,8 @@ fieldset input{
 	width: 600px;
 	float:right;
 }
-.footer-middle-menu ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-size: 0px;
-}
-.footer-middle-menu li{
-	display: inline-block;
-	color: #ffd180;
-	padding-left: 60px;
-}
-.footer-middle-menu a{
+
+.footer-middle-menu .menu a{
 	color: #ffd180;
 	font-size: 18px;
 	line-height: 24px;
