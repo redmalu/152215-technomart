@@ -537,7 +537,7 @@ a{
 	font-family: 'Cuprum','Tahoma',sans-serif;
 	font-weight: bold;
 }
-.service-menu active{
+.service-menu .active{
 	background-color: white;
 	color: #32425c;
 }
