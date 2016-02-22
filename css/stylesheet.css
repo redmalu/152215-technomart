@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -47px -10px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -81px -10px;
+}
+
+.sprite-icon-check-off-hover {
+    width: 23px;
+    height: 23px;
+    background-position: -124px -10px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -167px -10px;
+}
+
+.sprite-icon-check-on-hover {
+    width: 27px;
+    height: 23px;
+    background-position: -214px -10px;
+}
+
+.sprite-icon-deliver {
+    width: 78px;
+    height: 63px;
+    background-position: -10px -53px;
+}
+
+.sprite-icon-facebook {
+    width: 10px;
+    height: 18px;
+    background-position: -108px -53px;
+}
+
+.sprite-icon-instagram {
+    width: 17px;
+    height: 17px;
+    background-position: -138px -53px;
+}
+
+.sprite-icon-instrument {
+    width: 75px;
+    height: 61px;
+    background-position: -138px -90px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -175px -53px;
+}
+
+.sprite-icon-material {
+    width: 44px;
+    height: 65px;
+    background-position: -10px -171px;
+}
+
+.sprite-icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -74px -171px;
+}
+
+.sprite-icon-right {
+    width: 22px;
+    height: 40px;
+    background-position: -113px -171px;
+}
+
+.sprite-icon-sales {
+    width: 59px;
+    height: 72px;
+    background-position: -155px -171px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -215px -53px;
+}
+
+.sprite-icon-sort-up-red {
+    width: 9px;
+    height: 9px;
+    background-position: -233px -90px;
+}
+
+.sprite-icon-technic {
+    width: 78px;
+    height: 62px;
+    background-position: -262px -10px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -262px -92px;
+}
+
+.sprite-new-flag {
+    width: 60px;
+    height: 59px;
+    background-position: -234px -124px;
+}
