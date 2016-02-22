@@ -1,12 +1,12 @@
 html, body{
-	min-width: 1200px;
+	min-width: 940px;
 }
 body{
 	margin: 0px;
 	padding: 0px;
 	font-style: normal;
-	font-family: 'Cuprum', 'Tahoma', sans-serif;/*
-	background: url("../technomart-index.jpg") no-repeat 50% 0px;*/
+	font-family: 'Cuprum', 'Tahoma', sans-serif;
+/*	background: url("../technomart-catalog.jpg") no-repeat 50% 0px;*/
 }
 h1{
 	font-size: 36px;
@@ -122,7 +122,9 @@ a{
 	background-color: #f2f6f8;
 	padding-bottom: 55px;
 }
-
+.catalog-page .main-header{
+	margin-bottom: 0px;
+}
 .header-about{
 	padding-top: 47px;
 	min-height: 90px;
@@ -179,6 +181,34 @@ a{
 	padding: 7px 25px;
 	width: auto;
 }
+.btn-login{
+	box-sizing: border-box;
+	width: inherit;
+}
+.profile{
+	text-align: left;
+	padding:0 10px;
+}
+.profile a{
+	padding:0 10px;
+	color: #32425c;
+	text-decoration: underline;
+}
+.profile a:last-child{
+	position:relative;
+	padding-left: 30px;
+}
+.profile a:last-child:before{
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top:8px;
+	left:0px;
+	border: 2px solid #32425c;
+	border-radius: 50%;
+}
+
 .btn-enter{
 	position: relative;
 	padding-left: 48px;
@@ -592,20 +622,49 @@ a{
 	margin:0;
 	padding:0;
 	font-size: 0;
+	margin-top:20px;
+	margin-bottom: 25px;
 }
 .breadcrums li{
 	position: relative;
 	display: inline-block;
 	margin-top: 0;
-	padding-left: 39px;
 }
 .breadcrums a,
 .breadcrums span{
 	font-size:13px;
 	line-height: 18px;
-	color: #000000;
+	padding-left: 32px;
+	padding-right: 20px;
+	font-family: 'PT Sans','Tahoma',sans-serif;
+	color: black;
 	text-transform: uppercase;
 }
+
+.breadcrums li:first-child a{
+	height: 18px;
+	width: 5px;
+	padding-left:0;
+}
+.breadcrums li:first-child:before{
+	content: '';
+	position: absolute;
+	top:4px;
+	left: 0px;
+	width: 15px;
+  height: 12px;
+  background: url('../img/sprite-breadcrums.png') no-repeat -10px -10px;
+}
+.breadcrums li:not(:first-child):before{
+	content: '';
+	position: absolute;
+	top:4px;
+	left: 0px;
+  width: 8px;
+  height: 12px;
+  background: url('../img/sprite-breadcrums.png') no-repeat -45px -10px;
+}
+
 .catalog-main h1{
 	margin:0;
 	padding: 30px 27px;
@@ -618,10 +677,37 @@ a{
 	background-color: #f7f3ec;
 }
 .form-title span{
+	display: inline-block;
+	min-width: 120px;
 	font-size: 17px;
 	line-height: 1.2;
 	color: #000000;
 	text-transform: uppercase;
+}
+.sort-title span{
+	float:left;
+}
+.list-sort{
+	float:right;
+	margin:0;
+	padding:0;
+	font-size: 0;
+	list-style: none;
+	width: 500px;
+	text-align: right;
+}
+.list-sort li{
+	display: inline-block;
+	font-size: 17px;
+	line-height: 1.2;
+	padding-left: 30px;
+}
+.list-sort li:last-child{
+	padding-left: 10px;
+}
+.list-sort a{
+	text-transform: uppercase;
+	font-family: 'PT Sans', 'Tahoma',sans-serif;
 }
 .catalog-main-left{
 	float: left;
@@ -868,6 +954,25 @@ input[type='radio']:checked + label:hover::after{
 	background-color: #ee3643;
 	color:#ffffff;
 }
+.perforator-about{
+	border:1px solid #f2f6f8;
+	background-color: #f2f6f8;
+	color: black;
+	margin-bottom: 0;
+}
+.perforator-about h2{
+	font-family: 'Cuprum','Tahoma',sans-serif;
+	font-size: 30px;
+	line-height: 24px;
+	color: black;
+	margin-top: 68px;
+	margin-bottom: 40px;
+}
+.perforator-about p{
+	font-style: 'PT Sans', 'Tahoma', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
 .main-footer{
 	height: 300px;
 	margin-top: 70px;
@@ -991,7 +1096,7 @@ input[type='radio']:checked + label:hover::after{
 .footer-copyright p{
 	margin:0;
 }
-.footer-copyright p:nth-child(2n){
+.footer-copyright a{
 	color:#ffd180;
 }
 
@@ -1001,5 +1106,5 @@ input[type='radio']:checked + label:hover::after{
 }
 .block-copyright{
 	float:right;
-	width: 110px;
+	width: 100px;
 }
