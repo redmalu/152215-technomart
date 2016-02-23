@@ -1,11 +1,11 @@
 html, body{
-	min-width: 940px;
+	min-width: 1000px;
 }
 body{
 	margin: 0px;
 	padding: 0px;
 	font-style: normal;
-	font-family: 'Cuprum', 'Tahoma', sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 /*	background: url("../technomart-catalog.jpg") no-repeat 50% 0px;*/
 }
 h1{
@@ -28,11 +28,11 @@ h3{
 }
 a{
 	text-decoration: none;
-	font-family: 'Cuprum','Tahoma', sans-serif;
+	font-family: "Cuprum","Tahoma", sans-serif;
 }
 
 .clearfix::after{
-	content: '';
+	content: "";
 	display: table;
 	clear: both;
 }
@@ -54,6 +54,7 @@ a{
 	background-color: #ee3643;
 	float: left;
 	width: 220px;
+	
 }
 .logo span,
 .logo a{
@@ -72,6 +73,7 @@ a{
 	bottom:-5px;
 	background-color: #b52933;
 	height: 5px;
+	
 }
 .top-menu-logo{
 	height: 42px; 
@@ -85,23 +87,23 @@ a{
 	position: relative;
 	height: 42px;
 	padding: 0;
-	width: 220px;
+	width: 200px;
+	padding-right: 10px;
 	padding-left: 48px;
-	background-color: inherit;
+	background-color: white;
 	border: none;
-	color: #ffffff;
+	color: #000;
 	font-size: 17px;
 	line-height: 22px;
 }
 .top-menu-search:before{
-	content: '';
-	position: absolute;
-	top:8px;
-	left:20px;
-	background-image: url(../img/spritesheet.png);
-	width: 17px;
-  height: 17px;
-  background-position: -215px -53px;
+	content: "";
+	position: fixed;
+	top:78px;
+	left:2px;
+	width: 170px;
+  height: 170px;
+	background-color: black;
 }
 .top-menu-order ul{
 	font-size: 0;
@@ -111,16 +113,18 @@ a{
 }
 .top-menu-order li{
 	position: relative;
+	vertical-align: middle;
 	display: inline-block;
 	font-size: 17px;
 	line-height: 22px;
 }
 .top-menu-order li:before{
 	position:absolute;
-	content: '';
+	content: "";
 	top:12px;
 	left:12px;
 	background-image: url(../img/spritesheet.png);
+	
 }
 .top-menu-order .bookmark:before{
 	width: 14px;
@@ -191,11 +195,11 @@ a{
 	color: #e9292a;
 	font-size: 21px;
 	line-height: 18pt;
-	font-family: 'Cuprum';
+	font-family: "Cuprum","Tahoma",sans-serif;
 	font-style: normal;
 }
 .header-phone:before{
-	content: '';
+	content: "";
 	position: absolute;
 	top:8px;
 	left:20px;
@@ -203,6 +207,7 @@ a{
 	width: 19px;
   height: 19px;
   background-position: -74px -171px;
+	
 }
 .header-address{
 	margin:0;
@@ -212,18 +217,47 @@ a{
 }
 .btn-header{
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: top;
 	background-color: white;
 	color: #000000;
+	min-height: 45px;
 	font-size: 21px;
 	line-height: 30px;
 	text-transform: none;
 	padding: 7px 25px;
 	width: auto;
-}
-.btn-login{
 	box-sizing: border-box;
-	width: inherit;
+}
+
+.btn-header-container{
+	font-size: 0;
+}
+
+.btn-login{
+	position: relative;
+	padding-left: 48px;
+	padding-right: 0px;
+}
+.btn-header-container .btn-login:after{
+	position: absolute;
+	content: "";
+	top:12px;
+	left:12px;
+	width: 20px;
+	height: 18px;
+	background: url("../img/sprite/icon-user.png") no-repeat 0 0;
+}
+.btn-logout{
+	position: relative;
+}
+.btn-logout:after{
+	position: absolute;
+	content: "";
+	top:12px;
+	right:10px;
+	width: 20px;
+	height: 18px;
+	background: url("../img/sprite/icon-logout.png") no-repeat 0 0;
 }
 .profile{
 	text-align: left;
@@ -239,7 +273,7 @@ a{
 	padding-left: 30px;
 }
 .profile a:last-child:before{
-	content: '';
+	content: "";
 	position: absolute;
 	width: 0px;
 	height: 0px;
@@ -247,6 +281,7 @@ a{
 	left:0px;
 	border: 2px solid #32425c;
 	border-radius: 50%;
+	
 }
 
 .btn-enter{
@@ -255,13 +290,14 @@ a{
 	margin-right: 5px;
 }
 .btn-enter:before{
-	content: '';
+	content: "";
 	position: absolute;
 	width: 20px;
   height: 17px;
   top:13px;
 	left:16px;
-	background: #ffffff url('../img/spritesheet.png') no-repeat -175px -53px;
+	background: #ffffff url("../img/spritesheet.png") no-repeat -175px -53px;
+	
 }
 .main-navigation{
 	background-color: #32425c;
@@ -353,7 +389,8 @@ a{
   height: 65px;
   top:30px;
 	right: 42px;
-	background: url('../img/spritesheet.png') no-repeat -10px -171px;
+	background: url("../img/spritesheet.png") no-repeat -10px -171px;
+	
 }
 .item-orange{
 	background-color: #f6b22d;	
@@ -411,6 +448,7 @@ a{
 	top:0;
 	left:0;
 	padding: 26px;
+	
 }
 .slider-content h1{
 	margin:0;
@@ -418,7 +456,7 @@ a{
 }
 .slider-content span{
 	display: block;
-	font-family:'PT Sans', 'Tahoma', sans-serif;
+	font-family:"PT Sans", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 1.2;
 	color: white;
@@ -434,7 +472,7 @@ a{
 }
 .btn-prev::before{
 	position: absolute;
-	content: '';
+	content: "";
 	width: 22px;
   height: 40px;
   top:40px;
@@ -452,7 +490,7 @@ a{
 
 .btn-next::before{
 	position: absolute;
-	content: '';
+	content: "";
 	width: 22px;
   height: 40px;
   top:40px;
@@ -464,7 +502,41 @@ a{
 	display: block;
 	margin-bottom: 0;
 }
+.slider-footer{
+	font-size: 0;
+	padding:0;
+}
 
+.slider-content .btn{
+	display: inline-block;
+	width:auto;
+	padding:10px 50px;
+}
+
+.slider-switches{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:10px;
+	width: 141px;
+}
+.slider-switches ul{
+	margin: 0 auto;
+	padding:0;
+	width: 40px;
+	font-size: 0;
+}
+.slider-switches li{
+	display:inline-block;
+	height: 6px;
+	width: 6px;
+	margin: 5px;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+.slider-switches li.active{
+	background-color: #ee3643;
+}
 .section-title{
 	margin-bottom: 20px;
 	width: inherit;
@@ -546,7 +618,7 @@ a{
 	padding-bottom: 23px;
 }
 .service-title p{
-	font-family: 'PT Sans', 'Tahoma',sans-serif;
+	font-family: "PT Sans", "Tahoma",sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 24px;
@@ -576,7 +648,7 @@ a{
 	border-bottom: 1px solid #293449;
 	font-size: 21px;
 	line-height: 32px;
-	font-family: 'Cuprum','Tahoma',sans-serif;
+	font-family: "Cuprum","Tahoma",sans-serif;
 	font-weight: bold;
 }
 .service-menu .active{
@@ -589,16 +661,22 @@ a{
 	width:620px;
 	background: url(../img/delivery.png) no-repeat 100% 0px;
 }
+.service-slider:nth-child(3){
+	background: url(../img/guarantee.png) no-repeat 100% 0px;
+}
+.service-slider:nth-child(4){
+	background: url(../img/credit.png) no-repeat 100% 0px;
+}
 .service-slider h2{
 	font-size: 36px;
 	font-weight: normal;
 	margin-bottom: 22px;
 }
 .service-slider p{
-	width: 275px;
+	width: 380px;
 	font-size: 13px;
 	line-height: 24px;
-	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 }
 .main-about{
 	height: 400px;
@@ -619,7 +697,7 @@ a{
 	line-height: 1.2;
 }
 .main-about p{
-	font-family: 'PT Sans', 'Tahoma',sans-serif;
+	font-family: "PT Sans", "Tahoma",sans-serif;
 	font-size: 13px;
 	padding:0;
 	line-height:24px;
@@ -637,16 +715,17 @@ a{
 	padding-bottom: 20px;
 	font-size: 18px;
 	line-height: 21px;
-	font-family: 'Cuprum', 'Tahoma', sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 }
 .list li::before{
-	content: '';
+	content: "";
 	position: absolute;
 	width: 25px;
 	height: 2px;
 	top:10px;
 	left:0;
 	background-color: #fb565a;
+	
 }
 
 .main-about a{
@@ -682,7 +761,7 @@ a{
 	line-height: 18px;
 	padding-left: 32px;
 	padding-right: 20px;
-	font-family: 'PT Sans','Tahoma',sans-serif;
+	font-family: "PT Sans","Tahoma",sans-serif;
 	color: black;
 	text-transform: uppercase;
 }
@@ -693,22 +772,24 @@ a{
 	padding-left:0;
 }
 .breadcrums li:first-child:before{
-	content: '';
+	content: "";
 	position: absolute;
 	top:4px;
 	left: 0px;
 	width: 15px;
   height: 12px;
-  background: url('../img/sprite-breadcrums.png') no-repeat -10px -10px;
+  background: url("../img/sprite-breadcrums.png") no-repeat -10px -10px;
+	
 }
 .breadcrums li:not(:first-child):before{
-	content: '';
+	content: "";
 	position: absolute;
 	top:4px;
 	left: 0px;
   width: 8px;
   height: 12px;
-  background: url('../img/sprite-breadcrums.png') no-repeat -45px -10px;
+  background: url("../img/sprite-breadcrums.png") no-repeat -45px -10px;
+	
 }
 
 .catalog-main h1{
@@ -753,7 +834,7 @@ a{
 }
 .list-sort a{
 	text-transform: uppercase;
-	font-family: 'PT Sans', 'Tahoma',sans-serif;
+	font-family: "PT Sans", "Tahoma",sans-serif;
 }
 .catalog-main-left{
 	float: left;
@@ -797,7 +878,7 @@ a{
 	line-height: 24px;
 	min-height: 48px;
 	padding: 0px 30px;
-	font-family: 'PT Sans', 'Tahoma', sans-serif;
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: bold;
 	text-transform: none;
 	color:#000000;
@@ -816,19 +897,22 @@ a{
 	margin: 0px auto;
 	margin-bottom: 20px;
 	font-size: 17px;
+	font-family: "PT Sans", "Tahoma",sans-serif;
+	font-weight: bold;
 	line-height: 24px;
 	background-color: #ee3643;
 	color:#ffffff;
 	text-transform: uppercase;
 }
 .new-item:after{
-	content: '';
+	content: "";
 	position: absolute;
 	top: -1px;
 	right: -1px;
 	width: 60px;
 	height: 60px;
-	background: url('../img/sprite/new-flag.png') no-repeat 0 0;
+	background: url("../img/sprite/new-flag.png") no-repeat 0 0;
+	
 }
 .item-price:not(.old-price)::after{
 	content:"";
@@ -839,6 +923,7 @@ a{
 	height:0;
 	border:19px solid white;
 	border-left-color:#ee3643;
+	
 }
 .old-price{
 	background-color: inherit;
@@ -859,12 +944,13 @@ a{
   height:88px;
   padding:40px 0;
 	background-color: #ffffff;
+	
 }
 .item-btn{
 	display: block;
-	font-family: "Cuprum", "Tahoma", serif;
-	font-size: 19px;
-	line-height: 24px;
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
 	font-style: normal;
 	margin: 0 auto;
 	margin-bottom: 7px;
@@ -891,6 +977,15 @@ a{
 	background-color: #518534;
 	border-color: #518534;
 	color:#ffffff;
+}
+.btn-buy:before{
+	content: "";
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 17px;
+  height: 16px;
+	background: url(../img/spritesheet.png) no-repeat -10px -10px;
 }
 .btn-bookmark:hover{
 	border-color: #32425c;
@@ -947,6 +1042,7 @@ legend{
 	background: #ababab;
 	border-radius: 50%;
 	box-shadow: 0px 2px 1px 0 #cfcfcf; 
+	
 }
 .range-controls .toggle-min{
 	left: 10px;
@@ -963,7 +1059,7 @@ legend{
 }
 
 .price-controls input {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   width: 75px;
   padding: 8px 10px;
@@ -975,7 +1071,7 @@ legend{
   background: #f7f3ec;
 }
 .price-controls *{
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   text-align: center;
   color: black;
@@ -986,13 +1082,13 @@ legend{
 }
 
 
-input[type='checkbox'],
-input[type='radio']{
+input[type="checkbox"],
+input[type="radio"]{
 	display:none;
 }
 
-input[type='checkbox'] + label,
-input[type='radio'] + label{
+input[type="checkbox"] + label,
+input[type="radio"] + label{
 	display: block;
 	position: relative;
 	margin: 15px 0;
@@ -1003,9 +1099,9 @@ input[type='radio'] + label{
 	text-transform: uppercase;
 }
 
-input[type='checkbox'] + label::before,
-input[type='radio'] + label::before{
-	content: '';
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before{
+	content: "";
 	border: 3px solid #c1c1c1;
 	border-radius: 4px;
 	width: 17px;
@@ -1015,17 +1111,17 @@ input[type='radio'] + label::before{
 	left: 0px;
 }
 
-input[type='radio'] + label::before{
+input[type="radio"] + label::before{
 	border-radius: 50%;
 }
 
-input[type='checkbox'] + label:hover::before,
-input[type='radio'] + label:hover::before{
+input[type="checkbox"] + label:hover::before,
+input[type="radio"] + label:hover::before{
 	border-color:#b5b5b5;
 }
-input[type='radio']:checked + label::after{
+input[type="radio"]:checked + label::after{
 	position:absolute;
-	content: '';
+	content: "";
 	top:6px;
 	left:6px;
 	width:	1px;
@@ -1033,8 +1129,9 @@ input[type='radio']:checked + label::after{
 	background-color: #c1c1c1;
 	border:5px solid #c1c1c1;
 	border-radius: 50%;
+	
 }
-input[type='radio']:checked + label:hover::after{
+input[type="radio"]:checked + label:hover::after{
 	border-color:#b5b5b5;
 }
 
@@ -1044,7 +1141,7 @@ button{
 	text-transform: uppercase;
 	margin: 0 auto;
 	margin-top: 60px;
-	font-family: 'PT Sans','Tahoma',sans-serif;
+	font-family: "PT Sans","Tahoma",sans-serif;
 	border: 1px solid #e5e5e5;
 }
 
@@ -1065,17 +1162,17 @@ button{
 }
 .paging a,
 .paging span{
-    display: inline-block;
-    min-width: 20px;
-    min-height: 18px;
-    padding: 10px 10px;
-		font-size: 13px;
-    line-height: 18px;
-		color: black;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
+	display: inline-block;
+	min-width: 20px;
+	min-height: 18px;
+	padding: 10px 10px;
+	font-size: 13px;
+	line-height: 18px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
 }
 .paging a:hover{
 	
@@ -1092,7 +1189,7 @@ button{
 	margin-bottom: -70px;
 }
 .perforator-about h2{
-	font-family: 'Cuprum','Tahoma',sans-serif;
+	font-family: "Cuprum","Tahoma",sans-serif;
 	font-size: 30px;
 	line-height: 24px;
 	color: black;
@@ -1100,7 +1197,7 @@ button{
 	margin-bottom: 40px;
 }
 .perforator-about p{
-	font-style: 'PT Sans', 'Tahoma', sans-serif;
+	font-style: "PT Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 }
@@ -1120,6 +1217,7 @@ button{
 	float:left;
 	width: 220px;
 	height: 64px;
+	
 }
 .footer-top-menu{
 	float:right;
@@ -1197,13 +1295,14 @@ button{
 	background-color: red;
 }
 .btn-social:after{
-	content: '';
+	content: "";
 	position: absolute;
 	top:14px;
 	left:10px;
 	width: 20px;
   height: 12px;
 	background: url(../img/spritesheet.png) no-repeat -262px -92px;
+	
 }
 .social-vk:after{
 	background-position: -262px -92px;
@@ -1238,4 +1337,68 @@ button{
 .block-copyright{
 	float:right;
 	width: 100px;
+}
+
+.modal-block{
+	position: fixed;
+	bottom:25%;
+	left:25%;
+	width: 460px;
+	background: white;
+	border-top: 7px solid #ee3643; 
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-size: 18px;
+	color: black;
+	padding: 37px 80px;
+	box-shadow: inset 0 -112px 0 0 #f1f1f1;
+	box-shadow: 0 20px 75px 0px #000101;
+	z-index: 100;
+}
+.modal-block .row{
+	width: 460px;
+	padding: 10px 0px;
+}
+.modal-block .column{
+	width: 220px;
+	float:left;
+	margin-right: 20px;
+}
+.modal-block .column:last-child{
+	margin-right: 0;
+}
+.modal-block label{
+	display: block;
+	margin-bottom: 10px;
+}
+.modal-block input, 
+.modal-block textarea{
+	width: 100%;
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+	border: 2px solid #d7dcde;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+.modal-block .button{
+	width: 100%;
+	margin: 0;
+	background-color: #ee3643;
+	color: white;
+	text-transform: uppercase;
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	border-radius: 3px;
+	margin-top: 74px;
+}
+.modal-block .btn-close{
+	position: absolute;
+	top: 9px;
+	right: 9px;
+}
+.block-ok{
+	
 }

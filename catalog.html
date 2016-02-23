@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>htmlacademy.ru/technomart</title>
-	<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" >
   </head>
@@ -13,7 +13,7 @@
 			<div class="header-top-menu">
 				<div class="container clearfix">
 					<div class="logo top-menu-logo">
-						<span>Техномарт</span>
+						<a href="index.html">Техномарт</a>
 					</div>
 					<input class="top-menu-search" type="text" placeholder="Поиск:" value="" />
 					<div class="top-menu-order">
@@ -37,12 +37,14 @@
 							<p class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
 						</div>
 						<div class="column-3">
-							<a class="btn-header btn-login" href="#">Равшан Джамшутович</a>
+							<div class="btn-header-container">
+								<a class="btn-header btn-login" href="#">Равшан Джамшутович</a>
+								<a class="btn-header btn-logout" href="#"></a>
+							</div>
             	<div class="profile">
 								<a href="#">Мои заказы</a>
             		<a href="#">Личный кабинет</a>
 							</div>
-							
 						</div>
 					</div>
 					<nav class="main-navigation">
@@ -260,13 +262,27 @@
 						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 				</div>
       </section>
+			<section class="modal-block">
+				<p class="block-ok">Товар успешно добавлен в корзину!</p>
+				<div class="row">
+					<div class="column">
+						<a class="button" href="#">Оформить заказ</a>
+					</div>
+					<div class="column">
+						<a class="button" href="#">Продолжить покупки</a>
+					</div>
+				</div>
+				<a href="#" class="btn-close">
+						<img src="img/cross.png" width="21" height="21" alt="закрыть">
+				</a>
+			</section>
     </main>
     <footer class="main-footer">
 			<div class="footer-menu">
 				<div class="container">
 					<div class="footer-top-level clearfix">
 						<div class="logo footer-logo">
-							<span>Техномарт</span>
+							<a href="index.html">Техномарт</a>
 						</div>
 						<div class="footer-top-menu">
 							<ul class="menu">

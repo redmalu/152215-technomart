@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css" >
   </head>
@@ -71,7 +71,7 @@
 						<a class="block-btn" href="#">Для стройки</a> 
 					</div>
 					<div class="slider">
-						<div class="slider-1">
+						<div id="slider-1">
 							<div class="slider-image">
 								<img src="img/slide1.jpg" height="266" width="620" alt="перфоратор" />
 							</div>
@@ -82,7 +82,37 @@
 									<a class="btn-prev"></a>
 									<a class="btn-next"></a>
 								</div>
-								<a class="btn" href="catalog.html">Открыть каталог</a>
+								<div class="slider-footer">
+									<a class="btn" href="catalog.html">Открыть каталог</a>
+									<div class="slider-switches">
+										<ul>
+											<li class="active"></li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="slider-2"  style="display:none">
+							<div class="slider-image">
+								<img src="img/slide2.jpg" height="266" width="620" alt="перфоратор" />
+							</div>
+							<div class="slider-content">
+								<h1>Дрели</h1>
+								<span>Соседям на радость!</span>
+								<div class="slider-btn clearfix">
+									<a class="btn-prev"></a>
+									<a class="btn-next"></a>
+								</div>
+								<div class="slider-footer">
+									<a class="btn" href="catalog.html">Открыть каталог</a>
+									<div class="slider-switches">
+										<ul>
+											<li></li>
+											<li class="active"></li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -219,12 +249,23 @@
 								<li><a href="#">Кредит</a></li>
 							</ul>
 						</div>
-						<div class="service-slider">
+						<div class="service-slider" id="service-1">
 							<h2>Доставка</h2>
 							<p>Мы с удовольствием доставим ваш товар прямо<br/>
 										к вашему подъезду совершенно бесплатно!<br/>
 										Ведь мы неплохо заработаем,<br/>
 										поднимая его на ваш на этаж!</p>
+						</div>
+						<div class="service-slider" id="service-2" style="display:none;">
+							<h2>Гарантия</h2>
+							<p>Если купленный у нас товар поломается или заискрит,<br/> 
+									а также в случае пожара, спровоцированного его возгаранием,<br/> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+							<p>Дом уж восстановите как-нибудь сами.</p>
+						</div>
+						<div class="service-slider" id="service-3" style="display:none;">
+							<h2>Кредит</h2>
+							<p>Залезть в долговую яму стало проще!<br/>
+								Кредитные консультанты придут вам на помощь.</p>
 						</div>
 					</div>
 				</div>
@@ -247,10 +288,34 @@
 					<h3>Контакты</h3>
 					<p>Вы можете забрать товар сами, <br/>
 						заехав в наш офис:</p>
-					<img src="img/map-small.jpg" width="300" height="159" alt="map" />
+					<a href="#">
+						<img src="img/map-small.jpg" width="300" height="159" alt="map" />
+					</a>
 					<a class="btn" href="#">Заблудились напишите нам!</a>
 				</div>
       </section>
+			<section class="modal-block" style="display:none">
+				<form action="" method="post">
+					<div class="row clearfix">
+						<div class="column">
+							<label for="user-name">Ваше имя:</label>
+							<input type="text" id="user-name" placeholder="Представьтесь, пожалуйста" value="">
+						</div>
+						<div class="column">
+							<label for="user-email">Ваш e-mail:</label>
+							<input type="text" id="user-email" placeholder="Для отправки ответа" value="">
+						</div>
+					</div>
+					<div class="row">
+						<label for="comment">Текст письма:</label>
+						<textarea id="comment" rows="5" placeholder="В свободной форме" maxlength="255"></textarea>
+					</div>
+					<button class="button" type="submit">Отправить</button>
+				</form>
+				<a href="#" class="btn-close">
+					<img src="img/cross.png" width="21" height="21" alt="закрыть">
+				</a> 
+			</section>
     </main>
     <footer class="main-footer">
 			<div class="footer-menu">
@@ -263,7 +328,7 @@
 							<ul class="menu">
 								<li><a href="#">Компания</a></li>
 								<li><a href="#">Новости</a></li>
-								<li><a href="#">Каталог</a></li>
+								<li><a href="catalog.html">Каталог</a></li>
 								<li><a href="#">Доставка</a></li>
 								<li><a href="#">Контакты</a></li>
 							</ul>
