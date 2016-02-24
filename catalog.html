@@ -91,7 +91,7 @@
 								<div class="price-controls">
 									<input name="min-price" type="text" value="1" />
 									<span>-</span>
-									<input name="max-price" type="text" value="3000" />
+									<input name="max-price" type="text" value="300000" />
 								</div>
 							</div>
 						</fieldset>
@@ -126,11 +126,11 @@
         <div class="form-title sort-title clearfix">
           <span>Сортировка:</span>
 					<ul class="list-sort">
-						<li><a href="#">По цене</a></li>
+						<li><a class="active" href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По функционалу</a></li>
-						<li><a href="#">up</a></li>
-						<li><a href="#">up</a></li>
+						<li><a class="sort sort-down" href="#"></a></li>
+						<li><a class="sort sort-up active-sort" href="#"></a></li>
 					</ul>
         </div>
         <section class="catalog">
@@ -258,22 +258,22 @@
       <section class="perforator-about">
 				<div class="container">
 					<h2>Пара слов о перфораторах</h2>
-        	<p>Перфоратор — универсальный строительный инструмент. Предназначен для 	сверления и долбления отверстий в кирпиче, бетоне и камне.
+        	<p>Перфоратор — универсальный строительный инструмент. Предназначен для 	сверления и долбления отверстий в кирпиче, бетоне и камне.<br/>
 						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 				</div>
       </section>
-			<section class="modal-block">
-				<p class="block-ok">Товар успешно добавлен в корзину!</p>
+			<section class="modal-block" style="display:none;">
+				<p class="block-ok">Товар добавлен в корзину!</p>
 				<div class="row">
 					<div class="column">
 						<a class="button" href="#">Оформить заказ</a>
 					</div>
 					<div class="column">
-						<a class="button" href="#">Продолжить покупки</a>
+						<a class="button btn-next-buy" href="#">Продолжить покупки</a>
 					</div>
 				</div>
 				<a href="#" class="btn-close">
-						<img src="img/cross.png" width="21" height="21" alt="закрыть">
+					<img src="img/cross.png" width="21" height="21" alt="закрыть">
 				</a>
 			</section>
     </main>
