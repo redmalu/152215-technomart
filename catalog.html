@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>htmlacademy.ru/technomart</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css" >
-  </head>
+	<head>
+		<meta charset="utf-8">
+		<title>htmlacademy.ru/technomart</title>
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css" >
+	</head>
   <body class="catalog-page">
     <header class="main-header">
 			<div class="header-top-menu">
 				<div class="container clearfix">
 					<div class="logo top-menu-logo">
-						<a href="index.html">Техномарт</a>
+						<a href="">Техномарт</a>
 					</div>
-					<input class="top-menu-search" type="text" placeholder="Поиск:" value="" />
+					<form action="https://echo.htmlacademy.ru" method="get">
+						<label for="search"></label>
+						<input class="top-menu-search" id="search" type="text" placeholder="Поиск:" value="" />
+					</form>
 					<div class="top-menu-order">
 						<ul>
 							<li class="bookmark"><a href="#">Закладки: 0</a></li>
@@ -30,7 +33,7 @@
 					<div class="header-about clearfix">
 						<div class="column-3">
 							<p class="header-title">Интернет-магазин строительных 	материалов<br/>
-								и инструментов для ремонта</p>
+							и инструментов для ремонта</p>
 						</div>
 						<div class="column-3">
 							<p class="header-phone">+7(812)555-05-55</p>
@@ -253,32 +256,32 @@
 					</ul>
 				</div>
       </section>
+		</div>
+	</div>
+	<section class="perforator-about">
+		<div class="container">
+			<h2>Пара слов о перфораторах</h2>
+				<p>Перфоратор — универсальный строительный инструмент. Предназначен для 		сверления и долбления отверстий в кирпиче, бетоне и камне.<br/>
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+		</div>
+	</section>
+	<section class="modal-block" style="display:none;">
+		<p class="block-ok">Товар добавлен в корзину!</p>
+			<div class="row">
+				<div class="column">
+					<a class="button" href="#">Оформить заказ</a>
+				</div>
+				<div class="column">
+					<a class="button btn-next-buy" href="#">Продолжить покупки</a>
 				</div>
 			</div>
-      <section class="perforator-about">
-				<div class="container">
-					<h2>Пара слов о перфораторах</h2>
-        	<p>Перфоратор — универсальный строительный инструмент. Предназначен для 	сверления и долбления отверстий в кирпиче, бетоне и камне.<br/>
-						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-				</div>
-      </section>
-			<section class="modal-block" style="display:none;">
-				<p class="block-ok">Товар добавлен в корзину!</p>
-				<div class="row">
-					<div class="column">
-						<a class="button" href="#">Оформить заказ</a>
-					</div>
-					<div class="column">
-						<a class="button btn-next-buy" href="#">Продолжить покупки</a>
-					</div>
-				</div>
-				<a href="#" class="btn-close">
-					<img src="img/cross.png" width="21" height="21" alt="закрыть">
-				</a>
-			</section>
-    </main>
-    <footer class="main-footer">
-			<div class="footer-menu">
+			<a href="#" class="btn-close">
+				<img src="img/cross.png" width="21" height="21" alt="закрыть">
+			</a>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="footer-menu">
 				<div class="container">
 					<div class="footer-top-level clearfix">
 						<div class="logo footer-logo">
@@ -335,6 +338,6 @@
 					</div>
 				</div>
 			</div>	
-    </footer>
-</body>
+		</footer>
+	</body>
 </html> 
